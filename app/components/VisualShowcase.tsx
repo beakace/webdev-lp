@@ -1,6 +1,24 @@
+"use client";
+
+import { useEffect } from "react";
 import Image from "next/image";
+import { motion, stagger, useAnimate } from "motion/react";
+
+import Floating, {
+  FloatingElement,
+} from "@/fancy/components/image/parallax-floating";
 
 export default function VisualShowcase() {
+  const [scope, animate] = useAnimate();
+
+  useEffect(() => {
+    animate(
+      "img",
+      { opacity: [0, 1] },
+      { duration: 0.5, delay: stagger(0.15) }
+    );
+  }, []);
+
   return (
     <section className="py-12 px-8 max-w-7xl mx-auto">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">

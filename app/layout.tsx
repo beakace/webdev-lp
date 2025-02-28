@@ -24,9 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pl" className="scroll-smooth">
-      <body
-        className={`${inter.variable} bg-gradient-to-br from-blue-50 via-white to-indigo-50 min-h-screen font-sans`}
-      >
+      <body className={`${inter.variable}bg-white min-h-screen font-sans`}>
         <Navbar />
         {children}
       </body>

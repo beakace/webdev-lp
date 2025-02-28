@@ -57,7 +57,7 @@ interface ServiceCardProps {
 function ServiceCard({ title, description, icon }: ServiceCardProps) {
   return (
     <div className="bg-white p-8 rounded-lg shadow-md transition-transform hover:-translate-y-1">
-      <div className="bg-gray-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 text-[#0C8EF4]">
+      <div className="bg-gray-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 text-[#2A6B9F]">
         <svg
           className="w-8 h-8"
           fill="none"
